@@ -1,2 +1,15 @@
 polar:
   greetingMessage: Hello from prod catalog config server with new messsage updated
+
+spring:
+  datasouce:
+    username: user
+    password: password
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
+    hikari:
+      connection-timeout: 2000
+      maxium-pool-size: 5
+    sql:
+      init:
+        mode: always
